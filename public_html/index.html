@@ -7,8 +7,20 @@
 </head>
 <body>
 <!--Bootstrap CSS and JS-->
-<link rel="stylesheet" href="styles.css">
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+<!-- jQuery Form, Additional Methods, Validate -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+
+<!-- Your JavaScript Form Validator -->
+<script src="js/form-validate.js"></script>
+
+<!-- Google reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -43,7 +55,7 @@
 			</li>
 		</ul>
 		<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<input class="form-control mr-sm-2" id="form-control" name="form-control" type="search" placeholder="Search" aria-label="Search">
 			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 		</form>
 	</div>
@@ -58,8 +70,8 @@
 
 <!--Contact Form-->
 <div class="m-3">
-	<h3>Contact Us</h3>
-	<form id="contact-form" method="post" class="ng-pristine ng-valid ng-submitted" novalidate="novalidate"
+	<h3>Contact Me</h3>
+	<form id="contact-form" name="contact-form" action="../php/" method="post" class="ng-pristine ng-valid ng-submitted" novalidate="novalidate"
 			style="">
 		<div class="form-group">
 			<label for="name">Name <span class="text-danger">*</span></label>
@@ -103,18 +115,17 @@
 		</div>
 		<!-- reCAPTCHA -->
 		<div class="g-recaptcha m-y-1" data-sitekey="6LcFcNoUAAAAADIBsbEWk3JGHKDeP7W5SYlwwt2W">
-			<div style="width: 304px; height: 78px;">
-				<div><iframe
-					src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lc7ox8TAAAAAN9sf714pyF4Kjp1CkOHg3AUMVYr&amp;co=aHR0cHM6Ly9ib290Y2FtcC1jb2RlcnMuY25tLmVkdTo0NDM.&amp;hl=en&amp;v=JZfekeK8w6ZlhLfH_ZyseSLX&amp;size=normal&amp;cb=2anlcl6o72ld"
-					width="304" height="78" role="presentation" name="a-jtz6klzdh288" frameborder="0"
-					scrolling="no"
-					sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-				</div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
-									 style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-			</div>
+
 		</div>
 		<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
 		<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
 	</form>
+	<!--empty area for form error/success output-->
+	<div class="row">
+		<div class="col-xs-12">
+			<div id="output-area"></div>
+		</div>
+	</div>
+</div>
 </body>
 </html>

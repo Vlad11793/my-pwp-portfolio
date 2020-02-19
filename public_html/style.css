@@ -1,4 +1,4 @@
-img {
-	background-size: cover;
-	background-repeat: no-repeat;
-}
+body {
+	 background-image: url("documentation/pwp.png");
+	 background-color: #cccccc;
+ }
