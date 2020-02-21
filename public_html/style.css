@@ -1,21 +1,21 @@
 body, html {
 	height: 100%;
 }
-.bg {
-	/* The image used */
-	background-image: url("documentation/pwp.png");
+/*.bg {*/
+/*	!* The image used *!*/
+/*	background-image: url("documentation/pwp.png");*/
 
-	/* Full height */
-	height: 100%;
+/*	!* Full height *!*/
+/*	height: 100%;*/
 
-	/* Center and scale the image nicely */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-}
+/*	!* Center and scale the image nicely *!*/
+/*	background-position: center;*/
+/*	background-repeat: no-repeat;*/
+/*	background-size: cover;*/
+/*	-webkit-background-size: cover;*/
+/*	-moz-background-size: cover;*/
+/*	-o-background-size: cover;*/
+/*}*/
 
 body {
 	background: url("AboutMePic.png") no-repeat center center fixed;
@@ -24,3 +24,8 @@ body {
 	background-size: cover;
 	-o-background-size: cover;
 }
+
+/*body {*/
+/*	background: url(background-photo.jpg) center center cover no-repeat fixed;*/
+/*}*/
+
