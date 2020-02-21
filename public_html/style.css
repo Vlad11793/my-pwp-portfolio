@@ -1,21 +1,6 @@
 body, html {
 	height: 100%;
 }
-/*.bg {*/
-/*	!* The image used *!*/
-/*	background-image: url("documentation/pwp.png");*/
-
-/*	!* Full height *!*/
-/*	height: 100%;*/
-
-/*	!* Center and scale the image nicely *!*/
-/*	background-position: center;*/
-/*	background-repeat: no-repeat;*/
-/*	background-size: cover;*/
-/*	-webkit-background-size: cover;*/
-/*	-moz-background-size: cover;*/
-/*	-o-background-size: cover;*/
-/*}*/
 
 body {
 	background: url("AboutMePic.png") no-repeat center center fixed;
@@ -25,7 +10,12 @@ body {
 	-o-background-size: cover;
 }
 
-/*body {*/
-/*	background: url(background-photo.jpg) center center cover no-repeat fixed;*/
-/*}*/
 
+header .header{
+	background-image: url("pwp.png"); /* The image used */
+	background-color: #cccccc; /* Used if the image is unavailable */
+	height: 500px; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
