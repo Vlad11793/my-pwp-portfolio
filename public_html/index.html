@@ -1,219 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--Bootstrap CSS and JS-->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<!-- jQuery Form, Additional Methods, Validate -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	<!--<script src="https://kit.fontawesome.com/" -->
+	<script src="https://kit.fontawesome.com/da797a0342.js" crossorigin="anonymous"></script>
+
+	<!-- Your JavaScript Form Validator -->
+	<script src="js/form-validate.js"></script>
+
+	<!-- JQuery -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<!-- Google reCAPTCHA -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 	<title>Portfolio</title>
 </head>
+
 <body>
-<!--Bootstrap CSS and JS-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="style.css">
-<!-- jQuery Form, Additional Methods, Validate -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<!-- Jumbotron-->
+<section class ="Welcome">
+	<h2>Welcome</h2>
+		<div class="jumbotron-fluid py-5 px-5 intro-background bg-dark mx-auto d-block text-white">
+			<div class="bg-drop-text p-4">
+				<hr class="my-4">
+				<a class="animated bounceInLeft btn btn-dark text-white btn-lg" href="#MainPage" role="button">Welcome</a>
+			</div>
+		</div>
+</section>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+	<!-- NAVBAR-->
+	<nav class="navbar navbar-expand-md py-3 navbar-dark bg-dark shadow-sm">
+		<div class="container-fluid">
+			<a href="#" class="navbar-brand">
+				<!-- Logo Image -->
+				<img src="logo1.PNG" width="144"  class="d-inline-block align-middle mr-2" alt="logo1">
+			</a>
+			<button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span
+				class="navbar-toggler-icon"></span></button>
 
-<!-- Your JavaScript Form Validator -->
-<script src="js/form-validate.js"></script>
+			<div id="navbarSupportedContent" class="collapse navbar-collapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="#MainPage" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
+					<li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+					<li class="nav-item"><a href="Vladimir%20Arias-Antonov%20Resume.pdf" class="nav-link" download="Vlad-resume">
+						Resume<img src="download-icon.png" alt="download icon" class="ml-2 pb-2"><hr></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Main Page -->
+	<a id="MainPage"></a>
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">Full Stack Developer</h1>
+			</div>
+			<hr>
+			<div class="col-12">
+				<p class="lead">Vladimir Arias Antonov</p>
+			</div>
+		</div>
+	</div>
 
-<!-- JQuery -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<!-- Google reCAPTCHA -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!-- Three Column Secion-->
+	<a id="About"></a>
+	<div class="container-fluid padding">
+		<div class="row text center padding">
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<h3>Fast</h3>
+				<p> Building projects with speed and lag free interaction in mind</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<h3>Responsive</h3>
+				<p> Responsive layouts that work on any device, big or small.</p>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<h3>Dynamic</h3>
+				<p> Love adding animation and interaction to my websites</p>
+			</div>
+		</div>
+		<hr class="my-4">
 
-<!--Main Page -->
+	</div>
+
+	<!-- Two Column Section-->
+	<div class="container-fluid padding">
+		<div class="row-padding">
+			<div class="col-md-12 col-lg-6">
+				<h2>Who Am I?</h2>
+				<div class="col-lg-6">
+					<img src="Vlad1.png" class="img-fluid" alt="Vlad">
+				</div>
+				<p>Junior Full Stack Developer from Albuquerque, New Mexico</p>
+				<p>With a passion for code, gaming, and working out.</p>
+				<br>
+
+			</div>
+
+		</div>
+	</div>
+	<hr class="my-4">
 
 
-<!-- Card -->
-<!--Projects section v.4-->
+	<!--Projects-->
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">Projects</h1>
+			</div>
+		</div>
+		<hr>
+	</div>
 
-<!--<header class = "header">-->
-<!--	<img src="pwp.png" class="img-fluid" alt="headerImg" height="767">-->
-<!--</header>-->
-<!-- Card -->
+	<!--Cards-->
+	<a id="Projects"></a>
+	<div class="container-fluid padding">
+		<div class="row padding">
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="pwp2.png" alt="pwp2">
+					<div class="card-body">
+						<h4 class="card-title">Project 1</h4>
+						<p class="card-text">Place holder info for project 1</p>
+						<a href="#" class="btn-outline-secondary">Link to Project</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="pwp.png" alt="pwp">
+					<div class="card-body">
+						<h4 class="card-title">Project 2</h4>
+						<p class="card-text">Place holder info for project 2</p>
+						<a href="#" class="btn-outline-secondary">Link to Project</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="pwp3.png" alt="pwp3">
+					<div class="card-body">
+						<h4 class="card-title">Project 3</h4>
+						<p class="card-text">Place holder info for project 1</p>
+						<a href="#" class="btn-outline-secondary">Link to Project</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Footer-->
+	<footer>
+		<div class="container-fluid padding">
+			<div class="row text-center">
+				<div class="col-md-4">
+					<hr class="light">
+					<p>Vladimir Arias-Antonov</p>
+					<p>505-903-0949</p>
+					<p>ariasantonov93@gmail.com</p>
+
+				</div>
+				<div class="col-md-4">
+					<hr class="light">
+					<h5>Technologies</h5>
+					<hr class="light">
+					<p>MySQL databases</p>
+					<p>PHP</p>
+					<p>Docker</p>
+					<p>Writing Unit Tests</p>
+					<p>Writing REST APIs</p>
+					<p>JavaScript</p>
+					<p>Version Control Git Bash</p>
+					<p>React.js</p>
+					<p>Agile Project Management</p>
+					<p>HTML5</p>
+					<p>Bootstrap</p>
+					<p>CSS</p>
+					<p></p>
+				</div>
+				<div class="col-md-4">
+					<hr class="light">
+					<h5>Education</h5>
+					<hr class="light">
+					<p>Deep Dive Bootcamp Full Stack Developer Intern | CNM Ingenuity</p>
+					<p>	January – March 2020 ǀ   Albuquerque, NM</p>
+					<p>•	Intensive 10 Week LAMP stack bootcamp focused on learning Git, Version Control, REST APIs, React.js, and Docker.</p>
+
+
+				</div>
+				<!-- Socket-->
+				<div class="col-12">
+					<hr class="light">
+					<h5>&copy;VladDev.com</h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Socket -->
 
 
 
-<!-- NAVBAR-->
-<nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+	<!--Background Image-->
 	<div class="container">
-		<a href="#" class="navbar-brand">
-			<!-- Logo Image -->
-			<img src="logo1.PNG" width="200" alt="" class="d-inline-block align-middle mr-2" alt="logo1">
-			<!-- Logo Text -->
-			<span class="text-uppercase font-weight-bold">Logo</span>
-		</a>
+		<div class="bg"></div>
+	</div>
 
-		<button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+	<a id="Contact"></a>
+	<!--Contact Form-->
+	<div class = "container-contact">
+		<!--<div class="card border-0 shadow my-5">-->
+		<div class="shadow-none p-3 mb-5 bg-dark rounded">
+			<div class="card-body p-5">
+				<div class="m-3">
+					<h3>Contact Me</h3>
+					<form id="contact-form" name="contact-form" action="../php/" method="post" class="ng-pristine ng-valid ng-submitted" novalidate>
+						<div class="form-group">
+							<label for="name">Name <span class="text-danger">*</span></label>
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="fa fa-user" aria-hidden="true"></i>
+								</div>
+								<input type="text" class="form-control alert" id="name" name="name" placeholder="Name" aria-required="true"  aria-invalid="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email">Email <span class="text-danger">*</span></label>
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+								</div>
+								<input type="email" class="form-control alert" id="email" name="email" placeholder="Email" aria-required="true"  aria-invalid="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="subject">Subject</label>
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="fa fa-pencil" aria-hidden="true"></i>
+								</div>
+								<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="message">Message <span class="text-danger">*</span></label>
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="fa fa-comment" aria-hidden="true"></i>
+								</div>
+								<textarea class="form-control alert" rows="5" id="message" name="message" placeholder="Message (2000 characters max)" aria-required="true"  aria-invalid="true"></textarea>
+							</div>
+						</div>
+						<!-- reCAPTCHA -->
+						<div class="g-recaptcha m-y-1" data-sitekey="6LcFcNoUAAAAADIBsbEWk3JGHKDeP7W5SYlwwt2W">
 
-		<div id="navbarSupportedContent" class="collapse navbar-collapse">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
-				<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Work</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-			</ul>
+						</div>
+						<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+						<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
+					</form>
+					<!--empty area for form error/success output-->
+					<div class="row">
+						<div class="col-xs-12">
+							<div id="output-area"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</nav>
-
-<!--Background Image-->
-<div class="container">
-	<div class="bg"></div>
-</div>
+	<!-- footer for pwp -->
 
 
+			<footer class="container-fluid fixed-bottom shadow bg-footer mb-0 py-1">
 
-<!-- Page Content -->
-<div class="container">
-	<div class="card border-0 shadow my-5">
-
-		<div class="card-body p-5">
-			<h1 class="font-weight-light">About Me</h1>
-			<p class="lead">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-			<p class="lead">Scroll down...</p>
-<!--			<div style="height: 700px"></div>-->
-			<!-- Container within container-->
-			<div class="card-columns">
-				<div class="card">
-					<img src="https://via.placeholder.com/300.png/09f/fff" class="card-img-top" alt="placeholder">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				<blockquote class="text-center mb-0">
+				<div class="row mx-auto">
+					<div class="d-none d-lg-block my-auto mx-auto">
+					</div>
+					<div class="col-3 col-lg-2 mx-auto">
+						<a href="mailto:ariasantonov93@gmail.com" target="_blank">
+							<img src="ImagesIndex/icon-email.png" alt="email icon">
+							<h6 class="text-white">Email</h6></a>
+					</div>
+					<div class="col-3 col-lg-2 mx-auto">
+						<a href="https://github.com/Vlad11793" target="_blank">
+							<img src="ImagesIndex/icon-github.png" alt="Github icon">
+							<h6 class="text-white">GitHub</h6>
+						</a>
+					</div>
+					<div class="col-3 col-lg-2 mx-auto">
+						<a href="https://www.linkedin.com/in/vladimiraantonov/" target="_blank">
+							<img src="ImagesIndex/icon-linkedin.png" alt="linkedin icon">
+							<h6 class="text-white">Linkedin</h6></a>
 					</div>
 				</div>
-				<div class="card p-3">
-					<blockquote class="blockquote mb-0 card-body">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-						<footer class="blockquote-footer">
-							<small class="text-muted">
-								Someone famous in <cite title="Source Title">Source Title</cite>
-							</small>
-						</footer>
-					</blockquote>
-				</div>
-				<div class="card">
-					<img src="https://via.placeholder.com/300.png/09f/fff" class="card-img-top" alt="placeholder">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					</div>
-				</div>
-				<div class="card bg-primary text-white text-center p-3">
-					<blockquote class="blockquote mb-0">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-						<footer class="blockquote-footer text-white">
-							<small>
-								Someone famous in <cite title="Source Title">Source Title</cite>
-							</small>
-						</footer>
-					</blockquote>
-				</div>
-				<div class="card text-center">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					</div>
-				</div>
-				<div class="card">
-					<img src="https://via.placeholder.com/300.png/09f/fff" class="card-img-top" alt="placeholder">
-				</div>
-				<div class="card p-3 text-right">
-					<blockquote class="blockquote mb-0">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-						<footer class="blockquote-footer">
-							<small class="text-muted">
-								Someone famous in <cite title="Source Title">Source Title</cite>
-							</small>
-						</footer>
-					</blockquote>
-				</div>
-				<div class="card">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					</div>
-				</div>
-			</div>
-			<!-- End Container -->
-			<p class="lead mb-0">END!</p>
-
-		</div>
-	</div>
-</div>
+				</blockquote>
+			</footer>
 
 
-<!--Contact Form-->
-<div container>
-<div class="card border-0 shadow my-5">
-<div class="card-body p-5">
-<div class="m-3">
-	<h3>Contact Me</h3>
-	<form id="contact-form" name="contact-form" action="../php/" method="post" class="ng-pristine ng-valid ng-submitted" novalidate>
-		<div class="form-group">
-			<label for="name">Name <span class="text-danger">*</span></label>
-			<div class="input-group">
-				<div class="input-group-addon">
-					<i class="fa fa-user" aria-hidden="true"></i>
-				</div>
-				<input type="text" class="form-control alert alert-danger" id="name" name="name" placeholder="Name"
-						 aria-required="true" aria-describedby="name-error" aria-invalid="true">
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="email">Email <span class="text-danger">*</span></label>
-			<div class="input-group">
-				<div class="input-group-addon">
-					<i class="fa fa-envelope" aria-hidden="true"></i>
-				</div>
-				<input type="email" class="form-control alert alert-danger" id="email" name="email"
-						 placeholder="Email" aria-required="true" aria-describedby="email-error" aria-invalid="true">
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="subject">Subject</label>
-			<div class="input-group">
-				<div class="input-group-addon">
-					<i class="fa fa-pencil" aria-hidden="true"></i>
-				</div>
-				<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="message">Message <span class="text-danger">*</span></label>
-			<div class="input-group">
-				<div class="input-group-addon">
-					<i class="fa fa-comment" aria-hidden="true"></i>
-				</div>
-				<textarea class="form-control alert alert-danger" rows="5" id="message" name="message"
-							 placeholder="Message (2000 characters max)" aria-required="true"
-							 aria-describedby="message-error" aria-invalid="true"></textarea>
-			</div>
-		</div>
-		<!-- reCAPTCHA -->
-		<div class="g-recaptcha m-y-1" data-sitekey="6LcFcNoUAAAAADIBsbEWk3JGHKDeP7W5SYlwwt2W">
-
-		</div>
-		<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
-		<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
-	</form>
-	<!--empty area for form error/success output-->
-	<div class="row">
-		<div class="col-xs-12">
-			<div id="output-area"></div>
-		</div>
-	</div>
-</div>
-</div>
-</div>
-</div>
 </body>
+
 </html>

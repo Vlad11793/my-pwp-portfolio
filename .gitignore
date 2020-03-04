@@ -3,6 +3,10 @@
 */vendor
 php/vendor
 php/mail-config.php
-
+*.md
+/.htaccess
+/.gitignore
+/public_hmtl/documentation
+/Dockerfile
 
 
